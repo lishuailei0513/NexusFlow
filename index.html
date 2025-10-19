@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusFlow Labs - Business Plan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans SC', sans-serif;
+            background-color: #f8fafc; /* slate-50 */
+            color: #0f172a; /* slate-900 */
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #2563eb, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+            border-bottom: 2px solid transparent;
+        }
+        .nav-link.active, .nav-link:hover {
+            color: #2563eb;
+            border-bottom-color: #2563eb;
+        }
+        .tab-btn.active {
+            color: #2563eb;
+            border-bottom-color: #2563eb;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -0.6rem;
+            top: 0.5rem;
+            width: 1.2rem;
+            height: 1.2rem;
+            border-radius: 50%;
+            background-color: #f8fafc;
+            border: 3px solid #60a5fa;
+        }
+    </style>
+</head>
+<body class="antialiased scroll-smooth">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-black gradient-text">NexusFlow Labs</a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#problem" class="nav-link font-medium text-slate-600 pb-1">The Problem</a>
+                <a href="#solution" class="nav-link font-medium text-slate-600 pb-1">Solution</a>
+                <a href="#model" class="nav-link font-medium text-slate-600 pb-1">Business Model</a>
+                <a href="#founder" class="nav-link font-medium text-slate-600 pb-1">Founder</a>
+                <a href="#roadmap" class="nav-link font-medium text-slate-600 pb-1">Roadmap</a>
+            </nav>
+            <button id="menu-btn" class="md:hidden text-slate-800 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-4 6h4"></path></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#problem" class="mobile-nav-link block py-2 px-6 text-sm text-slate-600 hover:bg-slate-100">The Problem</a>
+            <a href="#solution" class="mobile-nav-link block py-2 px-6 text-sm text-slate-600 hover:bg-slate-100">Solution</a>
+            <a href="#model" class="mobile-nav-link block py-2 px-6 text-sm text-slate-600 hover:bg-slate-100">Business Model</a>
+            <a href="#founder" class="mobile-nav-link block py-2 px-6 text-sm text-slate-600 hover:bg-slate-100">Founder</a>
+            <a href="#roadmap" class="mobile-nav-link block py-2 px-6 text-sm text-slate-600 hover:bg-slate-100">Roadmap</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="text-center py-20 md:py-28 bg-white">
+            <div class="container mx-auto px-6">
+                <h1 class="text-xl md:text-2xl font-semibold text-slate-800 leading-snug max-w-4xl mx-auto">
+                    NexusFlow builds a SaaS platform for MT5/TradingView traders, solving trust & discipline issues with pro engineering.
+                </h1>
+                <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">
+                    Our platform is currently in development and will be launching soon. We are dedicated to providing traders with stable, transparent, and trustworthy quantitative tools through professional engineering.
+                </p>
+                <div class="mt-10">
+                    <p class="font-semibold text-slate-700 mb-4">Join our waitlist for early access and exclusive updates.</p>
+                    <form action="#" method="POST" class="w-full max-w-md mx-auto flex flex-col sm:flex-row gap-3">
+                        <input type="email" name="email" required class="flex-grow w-full px-5 py-3 text-base text-slate-900 placeholder-slate-400 bg-white border border-slate-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter your email address">
+                        <button type="submit" class="w-full sm:w-auto px-6 py-3 font-semibold text-white bg-blue-600 rounded-md shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200">
+                            Subscribe Now
+                        </button>
+                    </form>
+                    <p class="text-xs text-slate-400 mt-3">We respect your privacy and will never send spam.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem Section -->
+        <section id="problem" class="py-20 scroll-mt-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">"The Strategy Gap": The Problem in the Market</h2>
+                    <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">Why 90% of traders still lose money on the best platforms.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-slate-800">Platforms Are Just Tools</h3>
+                        <p class="text-slate-600 mt-2">TradingView and MT5 are powerful "kitchens," but they don't provide "Michelin-star recipes." Users still need to find or develop their own strategies.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-slate-800">Failure of Emotion & Discipline</h3>
+                        <p class="text-slate-600 mt-2">During manual execution, traders struggle to overcome emotional decisions and poor risk management, causing strategies to fail.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-blue-500">
+                        <h3 class="text-xl font-bold text-slate-800">Crisis of Trust</h3>
+                        <p class="text-slate-600 mt-2">The MQL5 marketplace is flooded with non-transparent, over-fitted "black boxes" that are hard to trust.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section id="solution" class="py-20 bg-white scroll-mt-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">The Solution: A SaaS Layer Built on "Trust" and "Technology"</h2>
+                    <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">We don't build platforms; we make your existing platforms smarter.</p>
+                </div>
+                <div class="max-w-4xl mx-auto">
+                    <div class="mb-8 border-b border-slate-200 flex justify-center space-x-4 md:space-x-8">
+                        <button data-tab="tab1" class="tab-btn active font-semibold py-3 px-1 text-slate-800 border-b-2">Strategy Library</button>
+                        <button data-tab="tab2" class="tab-btn font-semibold py-3 px-1 text-slate-500 border-b-2 border-transparent hover:text-slate-800">Smart Trading Assistant</button>
+                        <button data-tab="tab3" class="tab-btn font-semibold py-3 px-1 text-slate-500 border-b-2 border-transparent hover:text-slate-800">Quant Customization Service</button>
+                    </div>
+                    <div id="tab1" class="tab-content p-4 min-h-[150px]">
+                        <h3 class="text-2xl font-bold text-slate-800 mb-4">1. Validated Strategy Library (SaaS Subscription)</h3>
+                        <p class="text-lg text-slate-600">We provide a library of rigorously validated and transparently backtested quantitative strategies (as EAs/indicators/scripts), 100% compatible with MT5 and TradingView. We don't sell "black boxes"; we offer professional, fully transparent, and verifiable tools.</p>
+                    </div>
+                    <div id="tab2" class="tab-content hidden p-4 min-h-[150px]">
+                         <h3 class="text-2xl font-bold text-slate-800 mb-4">2. Smart Trading Assistant (SaaS Subscription)</h3>
+                        <p class="text-lg text-slate-600">A dashboard-style EA/plugin. It's **not** a strategy itself but a powerful assistant that helps traders **execute any strategy** better. Core features include automated risk calculation, one-click order execution, multi-position management, and auto break-even, all designed to bring discipline and efficiency.</p>
+                    </div>
+                    <div id="tab3" class="tab-content hidden p-4 min-h-[150px]">
+                        <h3 class="text-2xl font-bold text-slate-800 mb-4">3. Quant Research & Customization (Service)</h3>
+                        <p class="text-lg text-slate-600">Leveraging the founder's 10+ years of professional software engineering experience, we offer "strategy-to-code" custom development services for advanced clients. This provides crucial initial cash flow and helps us gain deep insights into the needs of power users.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Model Section -->
+        <section id="model" class="py-20 scroll-mt-20">
+             <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Business Model</h2>
+                    <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">Clear, Scalable SaaS Subscriptions + High-Value Services</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div class="border border-slate-200 bg-white rounded-lg p-8 text-center transform hover:scale-105 transition-transform duration-300 shadow-md">
+                        <h3 class="text-2xl font-bold">Assistant</h3>
+                        <p class="text-4xl font-bold my-4">€19<span class="text-lg font-medium text-slate-500">/mo</span></p>
+                        <p class="text-slate-600">Includes only the "Smart Trading Assistant," our low-cost customer acquisition product.</p>
+                    </div>
+                    <div class="border-2 border-blue-600 bg-white rounded-lg p-8 text-center transform hover:scale-105 transition-transform duration-300 shadow-xl relative">
+                        <div class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full">Most Popular</div>
+                        <h3 class="text-2xl font-bold text-blue-600">Pro</h3>
+                        <p class="text-4xl font-bold my-4">€69<span class="text-lg font-medium text-slate-500">/mo</span></p>
+                        <p class="text-slate-600">Includes "Assistant" + full "Strategy Library" access, targeting core users.</p>
+                    </div>
+                    <div class="border border-slate-200 bg-white rounded-lg p-8 text-center transform hover:scale-105 transition-transform duration-300 shadow-md">
+                        <h3 class="text-2xl font-bold">Bespoke</h3>
+                        <p class="text-4xl font-bold my-4">€500+<span class="text-lg font-medium text-slate-500">/project</span></p>
+                        <p class="text-slate-600">Custom development services to supplement initial cash flow and showcase technical expertise.</p>
+                    </div>
+                </div>
+             </div>
+        </section>
+        
+        <!-- Founder Section -->
+        <section id="founder" class="py-20 bg-white scroll-mt-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">The Founder: The Project's Core Advantage</h2>
+                    <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">A Perfect Fusion of Unique Skills</p>
+                </div>
+                 <div class="max-w-5xl mx-auto bg-slate-50 p-8 rounded-lg shadow-inner">
+                    <div class="grid md:grid-cols-3 gap-8 items-center">
+                        <div class="text-center md:text-left">
+                            <div class="w-32 h-32 rounded-full mx-auto md:mx-0 overflow-hidden mb-4 flex items-center justify-center">
+                                <img src="images/software_person.png" alt="Founder" class="w-full h-full object-cover">
+                            </div>
+                            <h3 class="text-2xl font-bold">SHUAILEI LI</h3>
+                            <p class="text-slate-600">Founder (Head of Technology & Trading)</p>
+                        </div>
+                        <div class="md:col-span-2">
+                             <div class="mb-6">
+                                <h4 class="text-xl font-bold mb-2">10+ Years of Senior Software Engineering Experience</h4>
+                                <p class="text-slate-600">Led teams in building high-concurrency, high-availability SaaS systems. Possesses the full range of engineering and architectural experience required to build a secure, scalable, global SaaS platform.</p>
+                            </div>
+                             <div>
+                                <h4 class="text-xl font-bold mb-2">2 Years as an Active Independent Trader</h4>
+                                <p class="text-slate-600">Fluent in MQL5 and Pine Script, with a deep understanding of market microstructure, risk management, and quantitative strategy development. Can accurately identify the core pain points of target customers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Roadmap Section -->
+        <section id="roadmap" class="py-20 scroll-mt-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Roadmap</h2>
+                    <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">Solid Start, Exponential Growth</p>
+                </div>
+                <div class="max-w-3xl mx-auto relative pl-5 border-l-2 border-slate-300">
+                    <div class="mb-12 pl-8 timeline-item">
+                        <p class="font-bold text-blue-600 text-lg">Phase 1</p>
+                        <h3 class="text-xl font-bold mt-1">MVP & Launch (Post-Approval)</h3>
+                        <p class="text-slate-600 mt-2">Establish operations in Tallinn. Complete MVP development (Smart Trading Assistant + 3 core strategies).</p>
+                    </div>
+                    <div class="mb-12 pl-8 timeline-item">
+                        <p class="font-bold text-blue-600 text-lg">Phase 2</p>
+                        <h3 class="text-xl font-bold mt-1">Market Validation (Year 1)</h3>
+                        <p class="text-slate-600 mt-2">Launch a "freemium" assistant on the MQL5 marketplace. Acquire the first **100** paying users through content marketing.</p>
+                    </div>
+                    <div class="mb-12 pl-8 timeline-item">
+                        <p class="font-bold text-blue-600 text-lg">Phase 3</p>
+                        <h3 class="text-xl font-bold mt-1">Ecosystem Expansion (Year 2)</h3>
+                        <p class="text-slate-600 mt-2">Full TradingView integration. Expand strategy library to 10+ strategies. Grow user base to **1,000**.</p>
+                    </div>
+                    <div class="pl-8 timeline-item">
+                        <p class="font-bold text-blue-600 text-lg">Phase 4</p>
+                        <h3 class="text-xl font-bold mt-1">Team Building (Year 3)</h3>
+                        <p class="text-slate-600 mt-2">Hire the first local employee in Estonia (Customer Support / Junior Quant Analyst).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="text-center py-8 bg-slate-800 text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-2xl font-bold mb-4">Why Estonia?</h2>
+            <p class="max-w-3xl mx-auto text-slate-300 mb-6">Estonia is a globally recognized hub for FinTech and SaaS. Its e-Residency program and digital infrastructure offer the most efficient and transparent launchpad for global entrepreneurs.</p>
+            <p class="font-semibold text-lg text-white mb-6">We are seeking approval from the Startup Committee to qualify for the Startup Visa.</p>
+            <p class="text-sm text-slate-400 mt-8">&copy; 2025 NexusFlow OÜ. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu Toggle
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+            
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // Active Nav Link on Scroll
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('nav a.nav-link');
+            
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.5
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute('id');
+                        navLinks.forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href') === `#${id}`) {
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+
+            // Tabs for Solution Section
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const tabId = button.getAttribute('data-tab');
+                    
+                    tabButtons.forEach(btn => {
+                        btn.classList.remove('active', 'text-slate-800');
+                        btn.classList.add('text-slate-500');
+                    });
+                    button.classList.add('active', 'text-slate-800');
+                    button.classList.remove('text-slate-500');
+
+                    tabContents.forEach(content => {
+                        content.classList.add('hidden');
+                        if (content.id === tabId) {
+                            content.classList.remove('hidden');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
